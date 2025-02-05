@@ -1,0 +1,181 @@
+.team-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    margin: 40px 20px;
+}
+.team-name{
+    text-align: left;
+    width: 40%;
+    font-size: 38px;
+}
+.team-para{
+    width: 60%;
+    font-size: 18px;
+}
+.team-para p{
+    max-width: 550px;
+}
+.team-para .teams-image{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.team-para .teams-image .image{
+    padding: 5px;
+    margin: 15px 0px;
+    font-size: 16px;
+}
+
+.team-para .teams-image .image img {
+    width: 95%;
+    height: auto;
+}
+
+.team-para .teams-image .image p {
+    margin: 5px 0px;
+}
+.team-para .teams-image .image .name {
+    font-size: 22px;
+}
+.team-para .teams-image .image .profession{
+    font-size: 14px;
+    color: grey;
+}
+.team-para .teams-image .image .bio{
+    font-size: 14px;
+}
+.team-para .teams-image .image a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(78, 77, 77);
+}
+
+.team-para .teams-image .image a:hover {
+    text-decoration: none;
+}
+
+.team-para .getintouch{
+    font-size: 38px;
+}
+.team-para .getintouch button{
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: black;
+    width: 160px;
+    height: 60px;
+}
+.team-para .getintouch button:hover{
+    transform: scale(0.90);
+    background-color: grey;
+    border: 1px solid grey;
+}
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .team-section {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .team-name {
+        width: 100%;
+        font-size: 32px; 
+    }
+
+    .team-para {
+        width: 100%;
+        font-size: 16px; 
+    }
+
+    .team-para .teams-image {
+        width: 100%; 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .team-name {
+        font-size: 28px; 
+        text-align: center;
+    }
+
+    .team-para {
+        font-size: 15px; 
+        text-align: center; 
+    }
+
+    .team-para .teams-image {
+        grid-template-columns: 1fr; 
+    }
+
+    .team-para .teams-image .image {
+        text-align: center;
+    }
+
+    .team-para .getintouch {
+        font-size: 30px; 
+        text-align: center; 
+    }
+
+    .team-para .getintouch button {
+        width: 140px; 
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-name {
+        font-size: 24px;
+    }
+
+    .team-para {
+        font-size: 14px; 
+    }
+
+    .team-para .teams-image {
+        grid-template-columns: 1fr; 
+    }
+
+    .team-para .teams-image .image img {
+        width: 100%; 
+    }
+
+    .team-para .getintouch {
+        font-size: 24px; 
+    }
+
+    .team-para .getintouch button {
+        width: 120px; 
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .team-name {
+        font-size: 20px;
+    }
+
+    .team-para {
+        font-size: 12px;
+    }
+
+    .team-para .teams-image .image {
+        font-size: 12px; 
+    }
+
+    .team-para .getintouch {
+        font-size: 20px; 
+    }
+
+    .team-para .getintouch button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
